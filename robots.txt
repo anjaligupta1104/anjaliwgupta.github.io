@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://anjaliwgupta.com/sitemap.xml
+Sitemap: https://anjaliwgupta.github.io/sitemap.xml
