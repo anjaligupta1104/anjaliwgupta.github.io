@@ -235,7 +235,9 @@ exclude:
   - migrations/
   - vendor
 keep_files:
-  - CNAME
+  # CNAME is not currently present: this site is served at anjaliwgupta.github.io
+  # with no custom domain. Re-add "CNAME" here (and the file itself) if a custom
+  # domain is set up later.
   - .nojekyll
 
 # Use al_folio_core as the theme runtime; local files can still override theme files.
