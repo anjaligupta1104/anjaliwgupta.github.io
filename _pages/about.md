@@ -2,16 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  align: left
+  image: headshot.jpg
+  image_circular: true # crops the image to make it circular
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -22,13 +17,21 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a PhD student in Computer Science at [NYU Courant](https://wp.nyu.edu/cilvr/), advised by Professor [Saining Xie](https://www.sainingxie.com/). I research machine learning and computer vision, specifically vision-centric multimodal LLMs.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+#### Education
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+**New York University**, Ph.D. in Computer Science, 2024&ndash;present <br>
+Advised by Saining Xie.
+
+**Yale University**, B.S. in Computer Science, Minor in Data Science, 2020&ndash;2024
+
+**Phillips Exeter Academy**, 2016&ndash;2020 <br>
+Early Cum Laude (top 5%).
+
+#### Other
+
+I also enjoy playing the violin (old videos [here](https://www.dropbox.com/scl/fi/u0odzzf4zm2ta7vvmpzz1/Foote.mp4?rlkey=1h3ob48jm0ti9sd9k2bsmdll0&st=dx5ut837&dl=0), [here](https://www.dropbox.com/scl/fi/ovssmblp25f0degekd32e/Barber.mp4?rlkey=ogmkwre1ine0spry6k0yul4f8&st=xqhrzlwc&dl=0), [here](https://www.youtube.com/watch?v=-4S01mB8CVk&ab_channel=DaveJamrog)) and would love any advice on playing classical music in NYC!

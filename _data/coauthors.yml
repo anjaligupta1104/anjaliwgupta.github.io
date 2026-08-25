@@ -1,34 +1,20 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Keep meta-information about co-authors here; Jekyll will insert links to their
+# webpages automatically wherever their name appears in _bibliography/papers.bib.
+# Keys are lower-cased last names with no accents.
+"yang":
+  - firstname: ["Jihan"]
+    url: https://jihanyang.github.io/
+  - firstname: ["Shusheng"]
+    url: https://github.com/vealocia
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"han":
+  - firstname: ["Rilyn"]
+    url: https://rilynhan.github.io/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"fei-fei":
+  - firstname: ["Li"]
+    url: https://profiles.stanford.edu/fei-fei-li
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
-
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
-
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"xie":
+  - firstname: ["Saining"]
+    url: https://www.sainingxie.com/
