@@ -16,3 +16,34 @@
   padding-right: 0.75rem;
   margin-bottom: 1rem;
 }
+
+// Bold (in addition to the upstream underline) the self-author name in
+// publication author lists. Selector matches al_folio_core's
+// _sass/_publications.scss `.author > em` nesting exactly, so this wins on
+// source order without needing !important.
+.publications ol.bibliography li .author > em {
+  font-weight: bold;
+}
+
+// Small social-icon row under the bio text on the about page (Scholar / CV /
+// GitHub / X / LinkedIn, order set in _data/socials.yml). The larger,
+// full-size icon row at the bottom of the page keeps al_folio_core's
+// existing `.social .contact-icons` styling untouched.
+.intro-social-icons {
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+
+  a {
+    margin-right: 1rem;
+
+    i::before {
+      color: var(--global-text-color);
+      transition-property: all 0.2s ease-in-out;
+    }
+
+    &:hover i::before {
+      color: var(--global-theme-color);
+    }
+  }
+}

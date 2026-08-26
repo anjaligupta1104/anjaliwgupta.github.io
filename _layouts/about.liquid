@@ -6,6 +6,10 @@ layout: default
         at the same weight)
      2. the auto-generated publications section heading reads "publications"
         instead of "selected publications"
+     3. a small social-icon row (styled in _sass/_custom.scss) renders right
+        after the bio text
+     4. an "other" section (page.other_text) renders after publications and
+        before the bottom social-icon row
      Everything else below is unchanged from upstream. -->
 <div class="post">
   <header class="post-header">
@@ -46,6 +50,11 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Small intro social-icon row (Scholar / CV / GitHub / X / LinkedIn) -->
+    {% if page.social %}
+      <div class="intro-social-icons">{% social_links %}</div>
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
@@ -68,6 +77,12 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
       </h2>
       {% include selected_papers.liquid %}
+    {% endif %}
+
+    <!-- Other -->
+    {% if page.other_text %}
+      <h2>other</h2>
+      <p>{{ page.other_text | markdownify }}</p>
     {% endif %}
 
     <!-- Social -->
