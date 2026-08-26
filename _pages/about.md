@@ -4,7 +4,7 @@ title: about
 permalink: /
 
 profile:
-  align: left
+  align: right
   image: headshot.jpg
   image_circular: true # crops the image to make it circular
 

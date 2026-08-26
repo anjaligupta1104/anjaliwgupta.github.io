@@ -1,0 +1,18 @@
+/*******************************************************************************
+ * Site-local custom styles (not part of al_folio_core).
+ * Pulled in by the local override assets/css/main.scss via `@use "custom";`.
+ ******************************************************************************/
+
+// Pale highlight card behind a specific publication entry.
+// Applied via _layouts/bib.liquid when a bibtex entry has `highlight: true`
+// (see _bibliography/papers.bib). Colors come from the CSS custom properties
+// defined in _sass/_themes.scss so it adapts to light/dark mode.
+.publications .row.pub-highlight {
+  background-color: var(--global-pub-highlight-bg);
+  border-left: 3px solid var(--global-pub-highlight-border);
+  border-radius: 8px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: 0.75rem;
+  margin-bottom: 1rem;
+}

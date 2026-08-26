@@ -6,8 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Anjali
 middle_name: W.
 last_name: Gupta
-contact_note: >
-  Email is the best way to reach me.
+contact_note: ""
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Anjali W. Gupta is a PhD student in Computer Science at NYU Courant, advised by Saining Xie, researching computer vision and multimodal LLMs.
 footer_text: >
@@ -389,6 +388,7 @@ filtered_bibtex_keywords:
     eprint,
     google_scholar_id,
     hal,
+    highlight,
     html,
     inspirehep_id,
     pdf,
