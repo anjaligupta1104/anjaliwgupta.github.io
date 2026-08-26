@@ -57,6 +57,11 @@
   margin-bottom: 0;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 0.95rem;
+  color: var(--global-text-color);
+}
+
+// The "[at]" / "[dot]" tokens read lighter than the actual address parts.
+.contact-line-token {
   color: var(--global-text-color-light);
 }
 

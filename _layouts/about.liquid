@@ -56,9 +56,17 @@ layout: default
       {% if site.email %}
         <!-- al_email_obfuscate (from the al_email_protect plugin) turned out to be a
              silent no-op in this build -- passed the raw address through unchanged,
-             with no build error to explain why. Using plain Liquid string filters
-             instead, which have no such failure mode. -->
-        <p class="contact-line">{{ site.email | replace: '@', ' [at] ' | replace: '.', ' [dot] ' }}</p>
+             with no build error to explain why. Building the obfuscated markup by
+             hand instead, which has no such failure mode. The address itself (local
+             part + domain segments) uses .contact-line's default (dark) color; only
+             the "[at]"/"[dot]" tokens are styled light via .contact-line-token. -->
+        {% assign email_parts = site.email | split: '@' %}
+        {% assign domain_parts = email_parts[1] | split: '.' %}
+        <p class="contact-line">
+          {{- email_parts[0] -}}
+          <span class="contact-line-token"> [at] </span>
+          {{- domain_parts | join: '<span class="contact-line-token"> [dot] </span>' -}}
+        </p>
       {% endif %}
 
       <!-- Small intro social-icon row (Scholar / CV / GitHub / X / LinkedIn) -->
