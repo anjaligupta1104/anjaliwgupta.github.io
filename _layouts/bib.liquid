@@ -1,12 +1,11 @@
 ---
 ---
-<!-- Local override of al_folio_core's _layouts/bib.liquid:
-     1. adds the `pub-highlight` class (styled in _sass/_custom.scss) when a
-        bibtex entry sets `highlight: true`
-     2. moves the `entry.award` badge (e.g. "Oral") out of the .links button
-        row onto its own line, in a .award-badge wrapper styled in
-        _sass/_custom.scss as a pale pill instead of a plain bordered button
-     Everything else below is unchanged from upstream. -->
+<!-- Local override of al_folio_core's _layouts/bib.liquid: adds the
+     `pub-highlight` class (styled in _sass/_custom.scss) when a bibtex entry
+     sets `highlight: true`. The `entry.award` badge (e.g. "Oral") stays in
+     its upstream position as the first item in the .links button row, but
+     _sass/_custom.scss restyles it as a pale pill instead of a plain
+     bordered button. Everything else below is unchanged from upstream. -->
 <div class="row{% if entry.highlight %} pub-highlight{% endif %}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
@@ -210,16 +209,13 @@
       {{ entry.note | strip }}
     </div>
 
-    {% if entry.award %}
-      <div class="award-badge">
+    <!-- Links/Buttons -->
+    <div class="links">
+      {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
-      </div>
-    {% endif %}
-
-    <!-- Links/Buttons -->
-    <div class="links">
+      {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}

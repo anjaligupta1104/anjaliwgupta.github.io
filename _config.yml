@@ -71,7 +71,7 @@ al_folio:
     allow_remote_loader: false
   features:
     cv:
-      enabled: true
+      enabled: false # no dedicated CV page on this site; the CV PDF is still linked directly via _data/socials.yml
     distill:
       enabled: true
   compat:
@@ -678,4 +678,4 @@ third_party_libraries:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-# Not used: CV is rendered from _data/cv.yml (cv_format: rendercv in _pages/cv.md).
+# Not used.

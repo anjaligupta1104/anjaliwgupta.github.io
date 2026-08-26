@@ -71,14 +71,10 @@
   letter-spacing: 0.02em;
 }
 
-// Pale pill badge for entry.award (e.g. "Oral"), on its own line above the
-// button row instead of inline with it (see _layouts/bib.liquid).
-.publications ol.bibliography li .award-badge {
-  margin-top: 0.35rem;
-  margin-bottom: 0.5rem;
-}
-
-.publications ol.bibliography li .award-badge a.award.btn {
+// Pale pill badge for entry.award (e.g. "Oral"), inline with the other
+// buttons (arXiv/Bib/PDF/Website/...) instead of the plain bordered-button
+// look the rest of .links uses.
+.publications ol.bibliography li .links a.award.btn {
   display: inline-block;
   background-color: var(--global-award-bg);
   color: var(--global-award-text);
