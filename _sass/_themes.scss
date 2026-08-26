@@ -30,6 +30,8 @@
   --global-highlight-color: #{v.$red-color-dark};
   --global-pub-highlight-bg: #eef4ff;
   --global-pub-highlight-border: #{v.$blue-color};
+  --global-award-bg: #fdecec;
+  --global-award-text: #b3261e;
   --global-back-to-top-bg-color: rgba(
     #{color.channel(v.$black-color, "red", v.$space: rgb)},
     #{color.channel(v.$black-color, "green", v.$space: rgb)},
@@ -101,6 +103,8 @@ html[data-theme="dark"] {
   --global-card-bg-color: #{v.$grey-900};
   --global-pub-highlight-bg: #16233a;
   --global-pub-highlight-border: #{v.$cyan-color};
+  --global-award-bg: #3a2020;
+  --global-award-text: #ff8a80;
   --global-back-to-top-bg-color: rgba(
     #{color.channel(v.$white-color, "red", v.$space: rgb)},
     #{color.channel(v.$white-color, "green", v.$space: rgb)},

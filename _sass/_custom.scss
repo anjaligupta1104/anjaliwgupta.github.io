@@ -28,9 +28,11 @@
 // Small social-icon row under the bio text on the about page (Scholar / CV /
 // GitHub / X / LinkedIn, order set in _data/socials.yml). The larger,
 // full-size icon row at the bottom of the page keeps al_folio_core's
-// existing `.social .contact-icons` styling untouched.
+// existing `.social .contact-icons` styling untouched. Lives inside the same
+// floated/wrapped .clearfix column as the bio text (see _layouts/about.liquid)
+// so it sits right under the bio instead of after the whole float clears.
 .intro-social-icons {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
 
@@ -46,4 +48,39 @@
       color: var(--global-theme-color);
     }
   }
+}
+
+// Obfuscated email line (al_email_obfuscate filter) shown above the intro
+// icon row.
+.contact-line {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+}
+
+// Uppercase the publication link buttons (PDF, arXiv, Code, Website, ...).
+.publications ol.bibliography li .links a.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+// Pale pill badge for entry.award (e.g. "Oral"), on its own line above the
+// button row instead of inline with it (see _layouts/bib.liquid).
+.publications ol.bibliography li .award-badge {
+  margin-top: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.publications ol.bibliography li .award-badge a.award.btn {
+  display: inline-block;
+  background-color: var(--global-award-bg);
+  color: var(--global-award-text);
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  text-transform: none;
+  letter-spacing: normal;
 }

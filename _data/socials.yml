@@ -2,7 +2,9 @@
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 scholar_userid: Vv4Iq7sAAAAJ # your Google Scholar ID
-cv_pdf: /assets/pdf/anjali-w-gupta-resume.pdf # path to your CV PDF file
+cv_pdf: # path to your CV PDF file; custom `logo` swaps the default "CV" text glyph for a document icon
+  value: /assets/pdf/anjali-w-gupta-resume.pdf
+  logo: fa-solid fa-file-lines
 github_username: anjaliwgupta
 x_username: AnjaliWGupta
 linkedin_username: anjaliwgupta

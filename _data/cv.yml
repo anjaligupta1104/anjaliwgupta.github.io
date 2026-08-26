@@ -20,7 +20,7 @@ cv:
         area: Computer Science
         studyType: Ph.D.
         start_date: 2024
-        end_date: present
+        end_date: "2028 (expected)"
         highlights:
           - Advised by Professor Saining Xie
           - "Focus: computer vision, multimodal large language models, spatial intelligence"
@@ -53,14 +53,14 @@ cv:
         position: Student Researcher
         location: New York, NY
         start_date: 2025-06-01
-        end_date: 2025-11-01
-        summary: Leading a project analyzing and improving the spatial intelligence of multimodal LLMs using embodied simulators.
+        end_date: 2026-02-01
+        summary: Led a project analyzing and improving the spatial intelligence of multimodal LLMs using embodied simulators.
 
       - company: Apple Inc.
-        position: Software Engineering Intern
+        position: Software Engineering Intern, HealthKit
         start_date: 2022-06-01
         end_date: 2022-08-01
-        summary: "On Apple's HealthKit team: designed and implemented a prototype algorithm and app in Swift to surface relationships between different HealthKit data types, towards empowering users with actionable insights."
+        summary: "Designed and built a Swift prototype statistically relating health data to deliver actionable user insights."
 
     Research Experience:
       - company: U. Maryland Perception & Intelligence Lab / Yale Vision Lab
@@ -87,6 +87,19 @@ cv:
         summary: 501(c)3 organization for STEM research mentorship of pre-college students.
 
     Publications:
+      - title: "Beyond Accuracy: Probing the Spatial Consistency of Multimodal LLMs through Structured Variations"
+        authors:
+          - "Anjali W. Gupta*"
+          - "Pinzhi Huang*"
+          - "Baiqiao Yin"
+          - "Anqi Yang"
+          - "Xudong Lin"
+          - "Sanghyun Woo"
+          - "Jihan Yang"
+          - "Saining Xie"
+          - "Leonidas Guibas"
+        publisher: Under submission at NeurIPS 2026
+
       - title: "Thinking in Space: How Multimodal Large Language Models See, Remember, and Recall Spaces"
         authors:
           - "Jihan Yang*"

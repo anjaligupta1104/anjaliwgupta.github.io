@@ -1,8 +1,12 @@
+# CVPR has no explicit color, so its badge inherits --global-theme-color
+# automatically (stays in sync if the site accent color ever changes).
 "CVPR":
   url: https://cvpr.thecvf.com/
 
 "IROS":
   url: https://www.iros.org/
+  color: "#828282"
 
 "ICMI":
   url: https://icmi.acm.org/
+  color: "#828282"

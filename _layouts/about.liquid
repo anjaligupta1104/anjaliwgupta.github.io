@@ -6,8 +6,10 @@ layout: default
         at the same weight)
      2. the auto-generated publications section heading reads "publications"
         instead of "selected publications"
-     3. a small social-icon row (styled in _sass/_custom.scss) renders right
-        after the bio text
+     3. an obfuscated email line + a small social-icon row (styled in
+        _sass/_custom.scss) render right after the bio text, inside the same
+        .clearfix column so they wrap next to the profile photo instead of
+        appearing below it once the float clears
      4. an "other" section (page.other_text) renders after publications and
         before the bottom social-icon row
      Everything else below is unchanged from upstream. -->
@@ -48,12 +50,18 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix">
+      {{ content }}
 
-    <!-- Small intro social-icon row (Scholar / CV / GitHub / X / LinkedIn) -->
-    {% if page.social %}
-      <div class="intro-social-icons">{% social_links %}</div>
-    {% endif %}
+      {% if site.email %}
+        <p class="contact-line">{{ site.email | al_email_obfuscate }}</p>
+      {% endif %}
+
+      <!-- Small intro social-icon row (Scholar / CV / GitHub / X / LinkedIn) -->
+      {% if page.social %}
+        <div class="intro-social-icons">{% social_links %}</div>
+      {% endif %}
+    </div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
