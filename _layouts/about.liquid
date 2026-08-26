@@ -54,7 +54,11 @@ layout: default
       {{ content }}
 
       {% if site.email %}
-        <p class="contact-line">{{ site.email | al_email_obfuscate }}</p>
+        <!-- al_email_obfuscate (from the al_email_protect plugin) turned out to be a
+             silent no-op in this build -- passed the raw address through unchanged,
+             with no build error to explain why. Using plain Liquid string filters
+             instead, which have no such failure mode. -->
+        <p class="contact-line">{{ site.email | replace: '@', ' [at] ' | replace: '.', ' [dot] ' }}</p>
       {% endif %}
 
       <!-- Small intro social-icon row (Scholar / CV / GitHub / X / LinkedIn) -->
