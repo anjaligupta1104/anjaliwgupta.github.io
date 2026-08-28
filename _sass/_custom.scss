@@ -23,6 +23,7 @@
 // source order without needing !important.
 .publications ol.bibliography li .author > em {
   font-weight: bold;
+  border-bottom: none;
 }
 
 // Small social-icon row under the bio text on the about page (Scholar / CV /
@@ -75,13 +76,10 @@
 // buttons (arXiv/Bib/PDF/Website/...) instead of the plain bordered-button
 // look the rest of .links uses.
 .publications ol.bibliography li .links a.award.btn {
-  display: inline-block;
   background-color: var(--global-award-bg);
   color: var(--global-award-text);
-  border: none;
-  border-radius: 999px;
+  border: 1px solid var(--global-award-border);
   font-weight: 600;
-  padding: 0.3rem 1rem;
   text-transform: none;
   letter-spacing: normal;
 }

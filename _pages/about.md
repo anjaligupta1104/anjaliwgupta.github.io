@@ -28,4 +28,6 @@ other_text: >
   Other pastimes while babysitting Claude: reading, knitting, and painting.
 ---
 
-I'm a PhD student in Computer Science at [NYU Courant](https://wp.nyu.edu/cilvr/), advised by Professor [Saining Xie](https://www.sainingxie.com/). I research machine learning and computer vision, specifically vision-centric multimodal LLMs.
+**PhD student (third-year) in Computer Science at [NYU Courant](https://wp.nyu.edu/cilvr/), advised by Professor [Saining Xie](https://www.sainingxie.com/).**
+
+I want to bring models into the real world. I research machine learning and computer vision, specifically spatial intelligence, vision-centric multimodal LLMs, and memory for embodied intelligence.
